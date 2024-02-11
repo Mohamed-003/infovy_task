@@ -6,10 +6,12 @@ const Users: CollectionConfig = {
   admin: {
     useAsTitle: 'email',
   },
-  fields: [
-    // Email added by default
-    // Add more fields as needed
-  ],
+ 
+      fields: [
+        { name: 'title', type: 'text' },
+        { name: 'content', type: 'richText' }
+      ]
+  
 }
 
 export default Users
